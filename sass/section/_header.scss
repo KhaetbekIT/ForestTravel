@@ -1,0 +1,67 @@
+.header {
+    background: url("./../image/header-bg.jpeg"), #265847;
+    background-size: cover;
+    padding: 50px 0 25px;
+
+    a {
+        text-decoration: none;
+    }
+
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-main {
+        padding-top: 255px;
+        padding-bottom: 247px;
+        text-align: center;
+
+        &>*+* {
+            margin-top: 20px;
+        }
+    }
+
+    &-scroller {
+        text-align: center;
+
+        a {
+            color: #FFF;
+            font-size: 16px;
+            font-style: normal;
+            line-height: normal;
+
+            &>*+* {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.logo {
+    color: #FFF;
+    font-family: 'Lobster';
+    font-size: 40px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.menu {
+    &-link {
+        color: #FFF;
+        font-size: 22px;
+        font-style: normal;
+        line-height: normal;
+        transition: all .3s linear;
+
+        &:hover {
+            color: gray;
+        }
+    }
+
+    &>*:not(:last-child) {
+        margin-right: 50px;
+    }
+}
+

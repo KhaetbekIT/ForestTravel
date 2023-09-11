@@ -1,0 +1,68 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &::after {
+        clear: both;
+    }
+}
+
+body {
+    font-family: "PT Sans";
+    font-weight: 400;
+    // sticky footer
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &>* {
+        flex-shrink: 0;
+    }
+}
+
+a,
+span,
+button,
+label,
+input,
+textarea,
+b {
+    display: inline-block;
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+a,
+button,
+label,
+input,
+textarea {
+    cursor: pointer;
+}
+
+.container {
+    max-width: calc(1170px + 30px);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+ul, ol{
+    &.list-style-none{
+        list-style-type: none;
+    }
+}

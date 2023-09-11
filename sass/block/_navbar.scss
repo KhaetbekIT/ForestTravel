@@ -1,0 +1,16 @@
+.navbar {
+    background: url("./../../image/nav_bg.jpg"), #265847;
+    background-size: cover;
+    background-position: top;
+    padding: 25px 0;
+
+    a {
+        text-decoration: none;
+    }
+
+    &-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
